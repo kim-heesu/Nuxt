@@ -1,8 +1,10 @@
 <template>
   <nav>
     <ul>
-        <li><nuxt-link to="/">HOME</nuxt-link></li>
+        <li><nuxt-link to="/index">HOME</nuxt-link></li>
         <li><nuxt-link to="/about">About</nuxt-link></li>
+        <li><nuxt-link to="/test">test</nuxt-link></li>
+        <li><nuxt-link to="/testfolder/test">테스트안에 테스트</nuxt-link></li>
     </ul>
 </nav>
 
