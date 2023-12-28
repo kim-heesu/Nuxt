@@ -2,18 +2,18 @@
   <header>
       <div class="inner">
           <h1 class="logo"><nuxt-link to="/">Vue</nuxt-link></h1>
-          <Nav />
+          <NavView />
       </div>
   </header>
 </template>
 
 <script>
-import Nav from '~/components/common/NavView.vue'
+import NavView from '~/components/common/NavView.vue'
 export default {
   components: {
-      Nav,
+    NavView
   }
-};
+}
 </script>
 
 <style scoped>
@@ -22,6 +22,7 @@ header {
 }
 header .inner {
   display: flex;
+  align-items: center;
   gap: 5rem;
   padding: 1rem;
 }

@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <div>난메인</div>
 </template>
 
 <script>

@@ -2,20 +2,8 @@
   <nav>
     <ul>
         <li><nuxt-link to="/">HOME</nuxt-link></li>
-        <li>
-            <nuxt-link to="/helloVue">안뇽</nuxt-link>
-            <ul class="depth">
-                <li><nuxt-link to="/helloVue/content">안뇽의 하위메뉴01</nuxt-link></li>
-            </ul>
-        </li>
-        <li><nuxt-link to="/byeVue">빠이</nuxt-link></li>
-        <li><nuxt-link to="/testVue">컬러차트</nuxt-link></li>
+        <li><nuxt-link to="/about">About</nuxt-link></li>
     </ul>
-    <div class="user-box">
-        <nuxt-link to="/member/login" class="btn btn-green btn-login">로그인</nuxt-link>
-        <nuxt-link to="/member/join" class="btn btn-green btn-join">회원가입</nuxt-link>
-        <nuxt-link to="/member/Update?user=2" class="btn btn-green">업데이트</nuxt-link>
-    </div>
 </nav>
 
 </template>
