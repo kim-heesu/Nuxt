@@ -13,7 +13,7 @@
               </li>
           </template>
           <template v-else>
-              <li class="empty">결과가 없습니다</li>
+              <li class="empty">결과가없습니다</li>
           </template>
       </ul>
       <ul class="pagenation">
