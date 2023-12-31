@@ -3,8 +3,12 @@
     <ul>
         <li><nuxt-link to="/index">HOME</nuxt-link></li>
         <li><nuxt-link to="/about">About</nuxt-link></li>
-        <li><nuxt-link to="/test">test</nuxt-link></li>
-        <li><nuxt-link to="/testfolder/test">테스트안에 테스트</nuxt-link></li>
+        <li>
+          <nuxt-link to="/testfolder">테스트폴더</nuxt-link>
+          <ul class="depth">
+            <li><nuxt-link to="/testfolder/test">테스트안에 테스트</nuxt-link></li>
+          </ul>
+        </li>
     </ul>
 </nav>
 
