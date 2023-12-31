@@ -47,7 +47,12 @@ nav .depth li {
 nav ul li:hover .depth {
   display: block;
 }
-
+/* nuxt active style */
+.nuxt-link-active {
+  color: green;
+  font-weight: 800;
+  border-bottom: 2px solid green;
+}
 .user-box > * {
   padding: 0.8rem 1.2rem;
   margin: 0 0.5rem;
@@ -59,10 +64,5 @@ nav ul li:hover .depth {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
-/* nuxt active style */
-.nuxt-link-active {
-  color: green;
-  font-weight: 800;
-  border-bottom: 2px solid green;
-}
+
 </style>
