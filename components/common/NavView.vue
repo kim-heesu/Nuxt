@@ -60,7 +60,7 @@ nav ul li:hover .depth {
   -o-transition: all 0.3s;
 }
 /* nuxt active style */
-.NuxtLink-active {
+.nuxt-link-active {
   color: green;
   font-weight: 800;
   border-bottom: 2px solid green;
