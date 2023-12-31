@@ -16,7 +16,7 @@ export default {
       { hid: 'og:description', property: 'og:description', content: '쉽지않다 넉스트' },
       { hid: 'og:image', property: 'og:image', content: 'https://postfiles.pstatic.net/20150724_98/jyh9759_1437727768276hcQMo_PNG/sevservser.png?type=w1' },
       { hid: 'og:image:alt', property: 'og:image:alt', content: 'OG이미지 대체텍스트' },
-      { hid: 'og:url', property: 'og:url', content:process.env.CLIENT_URL }
+      { hid: 'og:url', property: 'og:url', content: process.env.CLIENT_URL }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
