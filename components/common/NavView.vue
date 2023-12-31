@@ -1,6 +1,7 @@
 <template>
   <nav>
     <ul>
+      <!-- :exact 속성은 정확한 경로 일치 여부 -->
         <li><NuxtLink to="/" :exact="true">HOME</NuxtLink></li>
         <li><NuxtLink to="/about">About</NuxtLink></li>
         <li>
