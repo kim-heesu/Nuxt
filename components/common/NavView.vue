@@ -1,12 +1,12 @@
 <template>
   <nav>
     <ul>
-        <li><nuxt-link to="/index">HOME</nuxt-link></li>
-        <li><nuxt-link to="/about">About</nuxt-link></li>
+        <li><NuxtLink to="/index">HOME</NuxtLink></li>
+        <li><NuxtLink to="/about">About</NuxtLink></li>
         <li>
-          <nuxt-link to="/testfolder">테스트폴더</nuxt-link>
+          <NuxtLink to="/testfolder">테스트폴더</NuxtLink>
           <ul class="depth">
-            <li><nuxt-link to="/testfolder/test">테스트안에 테스트</nuxt-link></li>
+            <li><NuxtLink to="/testfolder/test">테스트안에 테스트</NuxtLink></li>
           </ul>
         </li>
     </ul>
@@ -60,7 +60,7 @@ nav ul li:hover .depth {
   -o-transition: all 0.3s;
 }
 /* nuxt active style */
-.nuxt-link-active {
+.NuxtLink-active {
   color: green;
   font-weight: 800;
   border-bottom: 2px solid green;

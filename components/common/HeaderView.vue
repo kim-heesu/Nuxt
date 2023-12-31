@@ -1,7 +1,7 @@
 <template>
   <header>
       <div class="inner">
-          <h1 class="logo"><nuxt-link to="/">Vue</nuxt-link></h1>
+          <h1 class="logo"><NuxtLink to="/">Nuxt</NuxtLink></h1>
           <NavView />
       </div>
   </header>

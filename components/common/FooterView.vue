@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="inner">
-      <nuxt-link to="/" class="f-logo">난 푸터다</nuxt-link>
+      <NuxtLink to="/" class="f-logo">난 푸터다</NuxtLink>
       <address>
         대표이사 김히수<br />
         사업자 번호 : 123-45-678910<br />
