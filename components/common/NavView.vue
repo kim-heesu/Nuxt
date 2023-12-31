@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-        <li><NuxtLink to="/">HOME</NuxtLink></li>
+        <li><NuxtLink to="/" :exact="true">HOME</NuxtLink></li>
         <li><NuxtLink to="/about">About</NuxtLink></li>
         <li>
           <NuxtLink to="/testfolder">테스트폴더</NuxtLink>
