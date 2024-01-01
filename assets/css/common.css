@@ -14,7 +14,7 @@
 ---------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
+  font-size: 62.5%;  /* 기본 font-size: 10px; */
   font-family: 'nanumsquare', sans-serif;
 }
 * {
@@ -124,6 +124,15 @@ form[class*='form-style'] .btn-wrap > * {
        tablet : max-width:1024px
 ---------------------------------------------------------------- */
 @media screen and (max-width: 1024px) {
+  body{
+    background: #f8f8f8;
+  }
+  .wrap{
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+  }
   .display-pc {
     display: none;
   }
@@ -136,4 +145,7 @@ form[class*='form-style'] .btn-wrap > * {
        mobile : max-width:768px
 ---------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
+  html{
+    font-size: 31.25%;  /* 기본 font-size: 5px */
+  }
 }
