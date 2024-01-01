@@ -16,7 +16,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .content-wrap{padding: 2rem; font-size: 2rem;}
-</style>

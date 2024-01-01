@@ -17,18 +17,19 @@
 <style scoped>
 footer {
   margin-top: auto;
-  background: #f8f8f8;
+  background: #222;
   padding: 2rem 0;
   border-top: 1px solid #ddd;
 }
 .f-logo {
   font-size: 2.5rem;
   font-weight: 800;
+  color: #fff;
 }
 address {
   margin-top: 1.5rem;
   font-size: 1.2rem;
-  color: #666;
+  color: #bbb;
   line-height: 1.4;
 }
 </style>

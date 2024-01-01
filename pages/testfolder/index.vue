@@ -1,5 +1,6 @@
 <template>
   <div class="content-wrap">
+    <div class="inner">
       <ul class="content">
           <template v-if="getList01.total_pages >= getList01.page">
               <li v-for="data in getList01.data" :key="data.id">
@@ -24,6 +25,7 @@
               <button type="button" value="3" @click="[changePage($event), getList()]">없는 페이지번호</button>
           </li>
       </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -60,19 +62,15 @@ export default {
 }
 </script>
 <style scoped>
-ul {
-  padding: 1rem 3rem;
-}
+
 ul.content {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  width: 100%;
 }
 ul.content li {
-  width: 100%;
-  text-align: center;
+  flex: 1;
 }
 ul.content li .color-box {
   display: flex;
@@ -81,7 +79,6 @@ ul.content li .color-box {
   margin: 0 auto;
   width: 100%;
   aspect-ratio: 1 / 1;
-  box-sizing: border-box;
 }
 ul.content li .color-box p {
   width: fit-content;
