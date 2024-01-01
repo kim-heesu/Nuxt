@@ -1,5 +1,5 @@
 <template>
-  <div>난어바웃{}</div>
+  <div>난어바웃</div>
 </template>
 
 <script>
