@@ -18,7 +18,9 @@ export default {
 
 <style scoped>
 header {
+  position: relative;
   border-bottom: 1px solid #ddd;
+  z-index: 10;
 }
 header .inner {
   display: flex;
