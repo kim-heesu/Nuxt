@@ -15,5 +15,11 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'nuxt/no-cjs-in-config': 'off',
+		'vue/html-indent': 'off',
+		'vue/html-closing-bracket-newline': 'off',
+		'indent': 'off',
+		'no-tabs': 'off'
+  }
 }

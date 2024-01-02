@@ -5,8 +5,7 @@
 /* font */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /* ----------------------------------------------------------------
-    nanumsquare
-
+  ** nanumsquare **
     light : 100;
     normal : 400;
     bold : 600;
@@ -31,6 +30,14 @@ html {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
+}
+.blind {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
 .wrap {
   position: relative;
@@ -105,7 +112,73 @@ form[class*='form-style'] .btn-wrap > * {
   text-align: center;
   font-size: 1.4rem;
 }
-
+/* modal style */
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.modal-wrap.open {
+  display: block;
+}
+.modal-wrap .dimmed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.modal-content .modal-body {
+  position: relative;
+  height: 68.8rem;
+  max-height: 85vh;
+  overflow: auto;
+}
+.modal-content.modal-sm {
+  width: 48rem;
+  text-align: center;
+}
+.modal-content.modal-sm .modal-body {
+  height: auto;
+  max-height: 80%;
+  min-height: 28rem;
+  padding: 6.4rem 0 14.4rem;
+  box-sizing: border-box;
+}
+.modal-content .modal-head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 7.2rem;
+}
+.modal-content .btn-modal-close {
+  position: absolute;
+  top: 50%;
+  right: 3.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: -1.2rem;
+  overflow: hidden;
+  text-indent: -999px;
+  z-index: 10;
+  background: url(@/assets/img/ico_close_72x72_black.png) no-repeat center / 100%;
+}
 /* ----------------------------------------------------------------
        content
 ---------------------------------------------------------------- */
@@ -138,6 +211,53 @@ form[class*='form-style'] .btn-wrap > * {
   }
   .display-m {
     display: block;
+  }
+
+  /* modal style */
+  .modal-content {
+    width: 100%;
+    height: 90%;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    border-radius: 2rem;
+    transform: none;
+  }
+  .modal-wrap.open .modal-content {
+    animation: fadeUp 0.7s forwards;
+  }
+  .modal-content .modal-head {
+    height: 10.4rem;
+  }
+  .modal-content .modal-head h4 {
+    font-size: 3.2rem;
+  }
+  .modal-content .btn-modal-close {
+    right: 4.2rem;
+    width: 4rem;
+    height: 4rem;
+    margin-top: -2rem;
+  }
+  .modal-content .modal-body {
+    height: calc(100% - 10.4rem);
+    max-height: none;
+  }
+  .modal-content.modal-sm {
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    width: 65rem;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+  .modal-wrap.open .modal-content.modal-sm {
+    animation: none;
+  }
+  .modal-content.modal-sm .modal-body {
+    max-height: 80%;
+    min-height: 36rem;
+    padding: 8rem 0 21rem;
+    box-sizing: border-box;
   }
 }
 

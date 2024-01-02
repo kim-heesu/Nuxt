@@ -1,9 +1,15 @@
 <template>
-  <div>난어바웃</div>
+  <div class="content-wrap">
+    <div class="inner">
+      <div>난어바웃</div>
+    </div>
+  </div>
 </template>
 
 <script>
+
 export default {
+  name: 'aboutPage',
   data () {
     return {
       thisRouter: this.$route.fullPath
