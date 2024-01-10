@@ -19,6 +19,8 @@ module.exports = {
     'nuxt/no-cjs-in-config': 'off',
 		'vue/html-indent': 'off',
 		'vue/html-closing-bracket-newline': 'off',
+    'vue/html-self-closing': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
 		'indent': 'off',
 		'no-tabs': 'off'
   }

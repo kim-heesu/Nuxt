@@ -1,7 +1,7 @@
 export default {
 	state: {
 		modalState: {
-			modalTest: false,
+			modalWrap: false,
 			modalToast: false,
 			toastText: '기본값'
 		}

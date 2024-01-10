@@ -9,13 +9,11 @@
 <script>
 
 export default {
-  name: 'aboutPage',
+  name: 'AboutPage',
   data () {
     return {
       thisRouter: this.$route.fullPath
     }
-  },
-  mounted () {
   },
   head () {
     return {
@@ -27,6 +25,8 @@ export default {
         { hid: 'og:url', property: 'og:url', content: `${process.env.CLIENT_URL}${this.thisRouter}` }
       ]
     }
+  },
+  mounted () {
   }
 }
 </script>
